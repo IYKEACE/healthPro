@@ -1,0 +1,260 @@
+:root {
+  --primary-color: #f26a2e;
+  --secondary-color: #f7f7f7;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #f1f1f1;
+  --transition: all 0.3s linear;
+  --max-width: 1170px;
+  
+}
+*,
+::after,
+::before  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'poppins', sans-serif;
+  background-color:  #ffffff;
+  color: #000000;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+/* header style start */
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.top-header{
+  flex: 1;
+  display: flex;
+  gap: 0.2rem;
+}
+.top-header p{
+align-self: center;
+width: 13px;
+}
+.top-header img{
+  width: 15%;
+  border-radius: 100px;
+  size: 20px;
+}
+.mid-header{
+  flex: 2;
+  margin-top: 0.7rem;
+}
+.nav-lists{
+  display: flex;
+  gap: 1rem;
+}
+.nav-list{
+  cursor: pointer;
+}
+.about{
+  background: linear-gradient(180deg, #C5DCFF 0%, rgba(197, 220, 255, 0.5) 96.88%, rgba(196, 196, 196, 0) 100%);
+border-radius: 5px;
+background-color: #C5DCFF;
+padding: 2.5px;
+cursor: pointer;
+}
+.bottom-header{
+  flex: 1;
+  gap: 2rem;
+}
+.btn{
+  /* box-shadow: 2px 5px 4px 0px #C7C7C740; */
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  /* cursor: pointer; */
+  width: 100px;
+  cursor: pointer;
+}
+.bot{
+  background: linear-gradient(68.08deg, #9083D5 9.64%, #807593 92.49%);
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100px;
+  cursor: pointer;
+}
+/* header style end */
+
+/* hero section style start */
+.hero-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.top-hero-content h2{
+  font-size: 61px;
+  font-weight: 209px;
+  align-self: right;
+  
+}
+.top-hero-content p{
+font-size: 15px;
+font-weight: 15px;
+/* 
+ */
+/* height: 13.18px; */
+top: 68.45px;
+left: 7.11px;
+}
+.bottom-hero-content img{
+  width: 600px;
+}
+/* hero section style end */
+
+/* appoint section start */
+.appoint-content{
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.top-appoint img{
+  width: 600px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-top: 1rem;
+}
+.bottom-appoint h2{
+  margin-bottom: 1rem;
+}
+.wow{
+  margin-bottom: 1rem;
+}
+.mid{
+  margin-bottom: 1rem;
+}
+.pra{
+  margin-bottom: 1rem;
+}
+/* appoint section end */
+
+/* line style start */
+.line{
+  margin-top: 9rem;
+  border: 3px solid #00000080
+}
+/* line style end */
+
+/* contact style start */
+.contact-container{
+  margin-bottom: 4rem;
+}
+.contact-content{
+display: flex;
+margin-top: 2rem;
+justify-content: space-between;
+gap: 5rem;
+}
+.first-contact img{
+  width: 90px;
+  margin-bottom: 2rem;
+}
+.first-contact{
+  display: flex;
+}
+.first-contact p{
+  margin-top: 1rem;
+  text-align: left;
+}
+.second-contact h2{
+margin-bottom: 1rem;
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Third-contact h3{
+  margin-bottom: 1rem;
+}
+.main{
+  display: flex;
+  gap: 1.2rem;
+}
+.Day{
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+.time{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.fourth-contact h4{
+  margin-bottom: 1rem;
+}
+.contact{
+  display: flex;
+  gap: 0.5rem;
+}
+.web{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.num{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* contact style end */
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .hero-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .appoint-content{
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .contact-content{
+    flex-direction: column;
+    text-align: center;
+  }
+}
