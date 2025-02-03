@@ -6,7 +6,8 @@
   --border-color: #f1f1f1;
   --transition: all 0.3s linear;
   --max-width: 1170px;
-  
+  --fixed-width: 620px;
+  --border-radius: 0.25rem;
 }
 *,
 ::after,
